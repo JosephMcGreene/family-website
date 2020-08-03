@@ -1,0 +1,238 @@
+
+/* HTML Tag Styles------------------------------ */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  background: linear-gradient(goldenrod, maroon);
+
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+header {
+  display: flex;
+  flex-direction: column;
+}
+
+h1 {
+  font-size: 4em;
+  text-shadow: 5px 5px 10px rgba(0,0,0,.6);
+  margin-top: 1rem;
+  text-align: center;
+  display: block;
+}
+
+div {
+  display: flex;
+  justify-content: center;
+}
+
+h3 {
+  font-size: 2em;
+  text-shadow: 5px 5px 10px rgba(0,0,0,.6);
+  text-align: center;
+}
+
+main {
+  flex: 1;
+
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+
+  display: inline-block;
+}
+
+ul a {
+  padding: 10px;
+}
+
+li {
+  align-self: center;
+  padding: 10px;
+}
+
+img {
+  max-width: 60%;
+  height: auto;
+  border-radius: 6px;
+  margin: 10px 0;
+}
+
+footer {
+  background-color: goldenrod;
+  color: maroon;
+  font-weight: bold;
+
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+/* Classes & IDs------------------------------ */
+
+.site-title {
+  font-size: 5em;
+  color: maroon;
+  text-shadow: 5px 5px 10px rgba(0,0,0,.6);
+}
+
+.home-header {
+  text-align: center;
+
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.home-main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.main-subtitle {
+  font-size: 2.5em;
+  text-align: center;
+  color: maroon;
+  text-shadow: 5px 5px 10px rgba(0,0,0,.6);
+}
+
+.home-year-request {
+  color: goldenrod;
+}
+
+.home-nav {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.home-nav li {
+  padding-left: 5px;
+  padding-right: 5px;
+  padding-bottom: 5px;
+  margin-top: 15px;
+}
+
+.home-nav a {
+  color: white;
+  font-weight: bold;
+  text-decoration: none;
+  background-color: maroon;
+  border-radius: 5px;
+}
+
+.top-home {
+  margin-top: 20px;
+  margin-bottom: 10px;
+
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.top-home a {
+  padding: 10px;
+  text-decoration: none;
+  color: maroon;
+  font-weight: bold;
+  background-color: goldenrod;
+  border-radius: 5px;
+}
+
+.top {
+  display: inline-block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+
+.top a {
+  padding: 10px;
+  text-decoration: none;
+  color: maroon;
+  font-weight: bold;
+  background-color: goldenrod;
+  border-radius: 5px;
+}
+
+.year-header {
+  font-weight: bold;
+  color: maroon;
+}
+
+.year-list {
+  position: fixed;
+  top: 11%;
+  padding: 8px 3px;
+  background-color: rgba(128,0,0,.4);
+  border-radius: 0 5px 5px 0;
+  box-shadow: 1px 2px 3px maroon;
+
+  display: flex;
+  flex-direction: column;
+}
+
+.year-list li {
+  padding: 13px 10px;
+}
+
+.year-list a {
+  color: white;
+  font-weight: bold;
+  text-decoration: none;
+  background-color: maroon;
+  border-radius: 5px;
+}
+
+.year-img {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Media Queries------------------------------ */
+
+@media screen and (min-width: 680px) {
+
+  img {
+    max-width: 45%;
+  }
+
+}
+
+@media screen and (min-width: 1050px) {
+
+  html {
+    max-width: 100%;
+  }
+
+  img {
+    max-width: 30%;
+    margin: 20px;
+  }
+
+  img:hover {
+    z-index: 100;
+  }
+
+  .year-img {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: flex-start;
+  }
+}
